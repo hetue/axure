@@ -1,11 +1,11 @@
 package step
 
 import (
-	"github.com/pangum/pangu"
+	"github.com/harluo/di"
 )
 
 func init() {
-	pangu.New().Get().Dependency().Puts(
+	di.New().Get().Dependency().Puts(
 		newBuild,
 	).Build().Apply()
 }

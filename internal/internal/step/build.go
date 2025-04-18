@@ -5,17 +5,17 @@ import (
 
 	"github.com/goexl/gfx"
 	"github.com/hetue/axure/internal/internal/config"
-	"github.com/hetue/core"
+	"github.com/hetue/boot"
 )
 
-var _ core.Step = (*Build)(nil)
+var _ boot.Step = (*Build)(nil)
 
 type Build struct {
 	config  *config.Project
-	command *core.Command
+	command *boot.Command
 }
 
-func newBuild(config *config.Project, command *core.Command) *Build {
+func newBuild(config *config.Project, command *boot.Command) *Build {
 	return &Build{
 		config:  config,
 		command: command,

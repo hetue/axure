@@ -2,10 +2,10 @@ package main
 
 import (
 	"github.com/hetue/axure/internal"
-	"github.com/hetue/core"
+	"github.com/hetue/boot"
 )
 
 func main() {
-	bootstrap := core.New()
+	bootstrap := boot.New()
 	bootstrap.Build().Boot(internal.New)
 }

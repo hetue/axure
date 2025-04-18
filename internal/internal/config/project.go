@@ -1,14 +1,14 @@
 package config
 
 import (
-	"github.com/pangum/pangu"
+	"github.com/harluo/boot"
 )
 
 type Project struct {
 	Dir string `json:"dir,omitempty"`
 }
 
-func newProject(config *pangu.Config) (project *Project, err error) {
+func newProject(config *boot.Config) (project *Project, err error) {
 	project = new(Project)
 	err = config.Build().Get(project)
 

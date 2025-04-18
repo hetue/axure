@@ -2,11 +2,11 @@ package internal
 
 import (
 	"github.com/hetue/axure/internal/internal"
-	"github.com/hetue/core"
+	"github.com/hetue/boot"
 )
 
-func New(params internal.Steps) []core.Step {
-	return []core.Step{
+func New(params internal.Steps) []boot.Step {
+	return []boot.Step{
 		params.Build,
 	}
 }

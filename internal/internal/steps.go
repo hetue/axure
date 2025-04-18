@@ -1,12 +1,12 @@
 package internal
 
 import (
+	"github.com/harluo/di"
 	"github.com/hetue/axure/internal/internal/step"
-	"github.com/pangum/pangu"
 )
 
 type Steps struct {
-	pangu.Get
+	di.Get
 
 	Build *step.Build
 }
