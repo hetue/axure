@@ -5,7 +5,7 @@ go 1.24
 require (
 	github.com/goexl/gfx v0.2.8
 	github.com/harluo/boot v1.6.7
-	github.com/harluo/di v0.0.3
+	github.com/harluo/di v0.0.5
 	github.com/hetue/boot v0.0.4
 )
 
